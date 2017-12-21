@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580061FinalA.ProductNewPage">
+    <Grid>
+        <Image
+            Source="1498142084512.jpg"
+            Aspect="Fill"
+            BackgroundColor="Silver" />
+        <ScrollView>
+            <StackLayout
+                Orientation="Vertical"
+                Margin="20">
+                <Label
+                    x:Name="titleLable"
+                    Text="ICT13580061FinalA"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="10" />
+                <Label
+                    Text="ชื่อ"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Entry
+                    x:Name="nameEntry"
+                    Placeholder="ชื่อ-นามสุกล"
+                    BackgroundColor="White" />
+                <Label
+                    Text="นามสกุล"
+                    TextColor="Green"
+                    FontSize="14" />
+                
+                <Entry
+                    x:Name="lastnameEntry"
+                    Placeholder="นามสกุล"
+                    BackgroundColor="White" />
+                <Label
+                    Text="อายุ"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Entry
+                    x:Name="oldEntry"
+                    Placeholder="อายุ"
+                    BackgroundColor="White"
+                    Keyboard="Numeric" />
+                <Label
+                    Text="เพศ"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Picker
+                x:Name="gender"
+                Title="เลือกเพศ"/>
+                 <Label
+                    Text="แผนก"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Picker
+                    x:Name="departmentPicker"
+                    Title="เลือกแผนก"
+                    BackgroundColor="White" />
+                <Label
+                    Text="เบอร์โทร"
+                    TextColor="Green"
+                    FontSize="14" />
+                 <Entry
+                    x:Name="phoneEntry"
+                    Placeholder="เบอร์โทร"
+                    BackgroundColor="White"
+                    Keyboard="Numeric" />
+                <Label
+                    Text="e-mail"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Entry
+                    x:Name="emailEntry"
+                    Placeholder="E-Mail"
+                    BackgroundColor="White" />
+             
+              <Label
+                    Text="Adderss"
+                    TextColor="Green"
+                    FontSize="14" />
+                         
+                <Editor
+                    x:Name="adderssEditor"
+                    HeightRequest="100" />
+                <Label
+                    Text="สถานะ"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Picker
+                    x:Name="statusPicker"
+                    Title="เลือกสถานะ"
+                    BackgroundColor="White" />
+                
+                <Label
+                    Text="จำนวนบุตร"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Entry
+                    x:Name="childEntry"
+                    Placeholder="จำนวนบุตร"
+                    BackgroundColor="White" />
+                <Label
+                    Text="เงินเดือน"
+                    TextColor="Green"
+                    FontSize="14" />
+                <Picker
+                    x:Name="moneyPicker"
+                    Title="เลือกเงินเดือน"
+                    BackgroundColor="White" />
+                <Button
+                    x:Name="saveButton"
+                    Text="บันทึก"
+                    BackgroundColor="Navy" />
+                <Button
+                    x:Name="cancelButton"
+                    Text="ยกเลิก"
+                    BackgroundColor="Maroon" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
